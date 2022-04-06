@@ -23,6 +23,14 @@ namespace PixelLauncher.Launcher.MVVN.View
         public HomeView()
         {
             InitializeComponent();  
+
         }
+
+        private void ExitApp_Checked(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+            
+        }
+
     }
 }

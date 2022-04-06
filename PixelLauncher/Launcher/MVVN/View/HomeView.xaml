@@ -30,11 +30,11 @@
 
 
                 <StackPanel Background="#423e3e" Height="371" VerticalAlignment="Top" Margin="-2,0,0,-2">
-                    <RadioButton Content="       Start Game"
+                    <RadioButton Content="      Start Game"
                          
                          Foreground="White"
                          FontSize="18" 
-                         Style="{StaticResource LaunchButtonTheme}" RenderTransformOrigin="0.594,0.417" Height="33" Margin="67,15,52,0">
+                         Style="{StaticResource LaunchButtonTheme}" RenderTransformOrigin="0.594,0.417" Height="50" Margin="71,15,62,0">
                         <RadioButton.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -44,7 +44,7 @@
                             </TransformGroup>
                         </RadioButton.RenderTransform>
                     </RadioButton>
-                    <Image Width="Auto" Height="484" Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\logo.png" Margin="-3,0,-4,0" RenderTransformOrigin="0.5,0.5">
+                    <Image Width="Auto" Height="460" Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\logo.png" Margin="-3,0,-4,0" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -57,76 +57,85 @@
                 </StackPanel>
             </Border>
         </Border>
+        <Grid>
+            <Image Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\darkgrey.png" Margin="35,-303,394,118" />
+            <TextBlock Text="" 
+         HorizontalAlignment="Center" 
+         VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="Blue" BlurRadius="10" />
+                </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Brand New Events For New and Returning Players for Q1 2022"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,291" Width="488"/>
+                   Margin="44,-386,0,391" Width="488"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Added Mounts for Late-Game Mount Farming for Serious Raiders"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="511"/>
+                   Margin="45,-390,0,106" Width="511"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Added New Bosses in the Dungeon Rooms and For the New Events"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="526"/>
+                   Margin="44,-396,0,112" Width="526"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Added New Items"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="247"/>
+                   Margin="45,-403,0,119" Width="247"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Updated Movement"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="247"/>
+                   Margin="45,-409,0,125" Width="247"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Adjusted Shop Prices from Early store, all the way to Late-Game Stores"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="555"/>
+                   Margin="45,-414,0,130" Width="555"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- New Areas for Beta 2.0.1 avaliable for testing!"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="431"/>
+                   Margin="45,-422,0,138" Width="431"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Beta 3.0.0 is in testing and will be ready soon!"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="431"/>
+                   Margin="50,-426,0,141" Width="430"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
-            <TextBlock Text="- For More Updates, Please Check The Offical Discord Page!"
+            <TextBlock Text="- For More Updates, Please Check The Official Discord Page!"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="39,-286,0,2" Width="485"/>
+                   Margin="46,-427,0,143" Width="485"/>
         </Border>
- 
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="Beta 2.0.1" 
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"
-                   Margin="800,-514,-270,493" Width="98"
+                   Margin="796,-628,-302,607" Width="134"
                    FontFamily="Launcher/Fonts/#Poppins"/>
         </Border>
     </StackPanel>

@@ -8,21 +8,40 @@
              d:DesignHeight="450" d:DesignWidth="1000">
 
     <StackPanel>
-        <Border Height="290"/>
+        <Grid>
+            <Image Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\darkgrey.png" Margin="23,55,178,-295" />
+            <TextBlock Text="" 
+         HorizontalAlignment="Center" 
+         VerticalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect ShadowDepth="0" Color="Blue" BlurRadius="10" />
+                </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
+
+      
         <Border Height="33" Margin="0,0,372,0">
-            <TextBlock Text="PLACEHOLDER TEXT:"
+            <TextBlock Text="Settings:"
+                   Foreground="White"
+                   FontSize="24"
+                   HorizontalAlignment="Left"
+                   Margin="38,-94,0,85" Width="488"/>
+        </Border>
+        <Border Height="33" Margin="0,0,372,0">
+            <TextBlock Text="Graphics Render: OPENGL"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="35,-242,0,247" Width="488"/>
+                   Margin="37,-76,0,-207" Width="511"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
-            <TextBlock Text="PLACEHOLDER"
+            <TextBlock Text="System Compatibility: ✔️ "
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="37,-242,0,-42" Width="511"/>
+                   Margin="38,-75,0,-210" Width="511"/>
         </Border>
+        <Border Height="33" Margin="0,0,372,0"/>
 
 
     </StackPanel>

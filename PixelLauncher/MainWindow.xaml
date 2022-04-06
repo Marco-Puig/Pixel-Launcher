@@ -13,7 +13,7 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
-    <Border Background="#262430"
+    <Border x:Name ="borderMain" Background="#3085b0"
             CornerRadius="20">
         <Grid Margin="10,-10,-10,10">
             <Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
                        HorizontalAlignment="Center"
                        Foreground="White"
                        FontSize="27" Grid.ColumnSpan="3" Margin="28,30,297,572" Grid.Row="1" Height="43" Width="298"
-                       FontFamily="Launcher/Fonts/#Poppins" Grid.RowSpan="2"/>
+                       FontFamily="Launcher/Fonts/#Poppins" Grid.RowSpan="2" Cursor="Arrow"/>
             <RadioButton Content="  Home"
                          Foreground="White"
                          FontSize="18" Grid.Column="2" Margin="528,31,45,572" Grid.Row="1" Grid.RowSpan="2"
@@ -62,7 +62,14 @@
                          FontFamily="Launcher/Fonts/#Poppins"
                          Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Width="91"
                          Command="{Binding SettingsViewCommand}"/>
-            <ContentControl Margin="28,0,78,-388" Content="{Binding CurrentView}" Grid.Row="2" Grid.ColumnSpan="5"/>
+            <ContentControl Margin="28,0,69,-388" Content="{Binding CurrentView}" Grid.Row="2" Grid.ColumnSpan="5"/>
+            <RadioButton x:Name="ExitApp" Content="  x"
+                         Foreground="White"
+                         FontSize="23" Grid.Column="4" Margin="313,10,22,28" Grid.Row="1"
+                         HorizontalAlignment="Center"
+                         FontFamily="Launcher/Fonts/#Poppins"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Width="34" Cursor="AppStarting"/>
+            <ContentControl Margin="28,0,69,-388" Content="{Binding CurrentView}" Grid.Row="2" Grid.ColumnSpan="5"/>
 
             <TextBlock Text="Exotic Online Version 2022.1.1.0 Beta 2.0.1 Copyright PixelTime 2019 - 2022"
                        VerticalAlignment="Center"
@@ -71,5 +78,6 @@
                        FontFamily="Launcher/Fonts/#Poppins"
                        FontSize="20" Margin="102,537,198,0" Grid.Column="2" Grid.Row="2" Height="39" Width="718" Grid.ColumnSpan="3"/>
         </Grid>
+
     </Border>
 </Window>
