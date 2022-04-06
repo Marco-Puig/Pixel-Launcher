@@ -13,7 +13,7 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
-    <Border x:Name ="borderMain" Background="#3085b0"
+    <Border x:Name ="borderMain" Background="#262430"
             CornerRadius="20">
         <Grid Margin="10,-10,-10,10">
             <Grid.ColumnDefinitions>

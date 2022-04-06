@@ -18,7 +18,7 @@
             <Image Width="Auto" Height="72" Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\news1exotic.png" Margin="-13,0,690,-40" RenderTransformOrigin="0.5,0.5"/>
         </Border>
         <Border Height="353">
-            <Border BorderBrush="#423e3e" CornerRadius="2,2,2,2" BorderThickness="2,2,2,2" Height="373" Margin="698,-7,24,-13" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom">
+            <Border BorderBrush="#423e3e" CornerRadius="2,2,2,2" BorderThickness="2,2,2,2" Height="345" Margin="728,-7,33,15" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Bottom">
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleY="-1"/>
@@ -34,7 +34,7 @@
                          
                          Foreground="White"
                          FontSize="18" 
-                         Style="{StaticResource LaunchButtonTheme}" RenderTransformOrigin="0.594,0.417" Height="50" Margin="71,15,62,0">
+                         Style="{StaticResource LaunchButtonTheme}" RenderTransformOrigin="0.594,0.417" Height="50" Margin="52,15,41,0">
                         <RadioButton.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -44,7 +44,7 @@
                             </TransformGroup>
                         </RadioButton.RenderTransform>
                     </RadioButton>
-                    <Image Width="Auto" Height="460" Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\logo.png" Margin="-3,0,-4,0" RenderTransformOrigin="0.5,0.5">
+                    <Image Width="Auto" Height="422" Source="C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\Launcher\Images\logo.png" Margin="-3,0,-4,0" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -135,7 +135,7 @@
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"
-                   Margin="796,-628,-302,607" Width="134"
+                   Margin="808,-638,-314,617" Width="134"
                    FontFamily="Launcher/Fonts/#Poppins"/>
         </Border>
     </StackPanel>
