@@ -5,4 +5,4 @@ It will be used for news, shop, settings, and updating the game each time a new 
 
 Written entirely in C#.
 
-![Screenshot 2022-04-06 015906](https://user-images.githubusercontent.com/90495366/161905521-9a9f1249-45f8-4099-8e0c-5cb5e7448fe3.png)
+![Screenshot 2022-04-06 193923](https://user-images.githubusercontent.com/90495366/162091642-9eee1f22-253a-4f3c-8415-0fe071405b82.png)
