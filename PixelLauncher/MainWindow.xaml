@@ -4,19 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PixelLauncher"
+        xmlns:viewModel = "clr-namespace:PixelLauncher.Launcher.MVVN.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1150"
+        Title="MainWindow" Height="650" Width="1100"
         WindowStyle = "None"
         Background="Transparent"
         AllowsTransparency="True">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
     <Border Background="#262430"
             CornerRadius="20">
         <Grid Margin="10,-10,-10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50">
                 </ColumnDefinition>
-                <ColumnDefinition Width="3*"/>
-                <ColumnDefinition Width="97*"/>
+                <ColumnDefinition Width="32*"/>
+                <ColumnDefinition Width="541*"/>
+                <ColumnDefinition Width="108*"/>
+                <ColumnDefinition Width="369*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -26,28 +32,44 @@
                 <RowDefinition Height="192*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="PixelTime"
+            <TextBlock Text="PixelTime Launcher"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Foreground="White"
-                       FontSize="27" Grid.ColumnSpan="2" Margin="0,30,982,10" Grid.Column="1" Grid.Row="1" Height="29" Width="118"/>
+                       FontSize="27" Grid.ColumnSpan="3" Margin="28,30,297,572" Grid.Row="1" Height="43" Width="298"
+                       FontFamily="Launcher/Fonts/#Poppins" Grid.RowSpan="2"/>
             <RadioButton Content="  Home"
                          Foreground="White"
-                         FontSize="18" Grid.Column="2" Margin="523,31,476,572" Grid.Row="1" Grid.RowSpan="2"
-                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417"/>
+                         FontSize="18" Grid.Column="2" Margin="528,31,45,572" Grid.Row="1" Grid.RowSpan="2"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Grid.ColumnSpan="2"
+                         IsChecked="True"
+                         Command="{Binding HomeViewCommand}"
+                         FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Shop"
                          Foreground="White"
-                         FontSize="18" Grid.Column="2" Margin="622,31,383,572" Grid.Row="1" Grid.RowSpan="2"
-                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417"/>
+                         FontSize="18" Grid.Column="3" Margin="90,31,323,572" Grid.Row="1" Grid.RowSpan="2"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Grid.ColumnSpan="2" 
+                         FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Discord"
                          Foreground="White"
-                         FontSize="18" Grid.Column="2" Margin="718,31,265,572" Grid.Row="1" Grid.RowSpan="2"
-                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417"/>
+                         FontSize="18" Grid.Column="4" Margin="0,31,205,572" Grid.Row="1" Grid.RowSpan="2"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" HorizontalAlignment="Right" Width="90"
+                         FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Settings"
                          Foreground="White"
-                         FontSize="18" Grid.Column="2" Margin="831,31,151,572" Grid.Row="1" Grid.RowSpan="2"
+                         FontSize="18" Grid.Column="4" Margin="186,31,92,572" Grid.Row="1" Grid.RowSpan="2"
                          HorizontalAlignment="Center"
-                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Width="85"/>
+                         FontFamily="Launcher/Fonts/#Poppins"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Width="91"
+                         Command="{Binding SettingsViewCommand}"/>
+            <ContentControl Margin="28,0,78,-388" Content="{Binding CurrentView}" Grid.Row="2" Grid.ColumnSpan="5"/>
+
+            <TextBlock Text="Exotic Online Version 2022.1.1.0 Beta 2.0.1 Copyright PixelTime 2019 - 2022"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontFamily="Launcher/Fonts/#Poppins"
+                       FontSize="20" Margin="102,537,198,0" Grid.Column="2" Grid.Row="2" Height="39" Width="718" Grid.ColumnSpan="3"/>
         </Grid>
     </Border>
 </Window>

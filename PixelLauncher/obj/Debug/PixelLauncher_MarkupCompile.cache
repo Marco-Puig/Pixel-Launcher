@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\marco\Desktop\Pixel-Launcher\PixelLauncher\App.xaml
-2598990515
+5-2015269187
 
-71636662173
+121583675753
 13-1505183044
-Launcher\Theme\MenuButtonTheme.xaml;MainWindow.xaml;
+Launcher\MVVN\View\HomeView.xaml;Launcher\MVVN\View\SettingsView.xaml;Launcher\Theme\LaunchButtonTheme.xaml;Launcher\Theme\MenuButtonTheme.xaml;MainWindow.xaml;
 
 False
 

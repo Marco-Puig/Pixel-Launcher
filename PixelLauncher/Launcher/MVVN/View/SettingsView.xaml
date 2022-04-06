@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="PixelLauncher.Launcher.MVVN.View.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PixelLauncher.Launcher.MVVN.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1000">
+
+    <StackPanel>
+        <Border Height="290"/>
+        <Border Height="33" Margin="0,0,372,0">
+            <TextBlock Text="PLACEHOLDER TEXT:"
+                   Foreground="White"
+                   FontSize="17"
+                   HorizontalAlignment="Left"
+                   Margin="35,-242,0,247" Width="488"/>
+        </Border>
+        <Border Height="33" Margin="0,0,372,0">
+            <TextBlock Text="PLACEHOLDER"
+                   Foreground="White"
+                   FontSize="17"
+                   HorizontalAlignment="Left"
+                   Margin="37,-242,0,-42" Width="511"/>
+        </Border>
+
+
+    </StackPanel>
+
+
+</UserControl>

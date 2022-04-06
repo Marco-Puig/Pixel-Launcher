@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Launcher\MVVN\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Launcher\MVVN\View\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Launcher\Theme\LaunchButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Launcher\Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -69,6 +81,15 @@
     </Compile>
     <Compile Include="Launcher\Core\ObservableObject.cs" />
     <Compile Include="Launcher\Core\RelayCommand.cs" />
+    <Compile Include="Launcher\MVVN\ViewModel\HomeViewModel.cs" />
+    <Compile Include="Launcher\MVVN\ViewModel\MainViewModel.cs" />
+    <Compile Include="Launcher\MVVN\ViewModel\SettingsViewModel.cs" />
+    <Compile Include="Launcher\MVVN\View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher\MVVN\View\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -92,6 +113,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Launcher\Fonts\Poppins-Regular.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,11 +124,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Launcher\Data\" />
-    <Folder Include="Launcher\Fonts\" />
-    <Folder Include="Launcher\Images\" />
-    <Folder Include="Launcher\MVN\Model\" />
-    <Folder Include="Launcher\MVN\ViewModel\" />
-    <Folder Include="Launcher\MVN\View\" />
+    <Folder Include="Launcher\MVVN\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Launcher\Images\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Launcher\Images\news1exotic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
 </Project>
