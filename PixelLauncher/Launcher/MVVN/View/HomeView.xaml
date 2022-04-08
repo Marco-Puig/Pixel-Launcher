@@ -114,21 +114,21 @@
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="45,-422,0,138" Width="431"/>
+                   Margin="46,-418,0,134" Width="430"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- Beta 3.0.0 is in testing and will be ready soon!"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="50,-426,0,141" Width="430"/>
+                   Margin="46,-420,0,135" Width="430"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="- For More Updates, Please Check The Official Discord Page!"
                    Foreground="White"
                    FontSize="17"
                    HorizontalAlignment="Left"
-                   Margin="46,-427,0,143" Width="485"/>
+                   Margin="47,-424,0,140" Width="485"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
             <TextBlock Text="Beta 2.0.1" 

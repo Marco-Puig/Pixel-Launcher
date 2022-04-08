@@ -30,5 +30,20 @@ namespace PixelLauncher
             if (e.ChangedButton == MouseButton.Left)
                 DragMove();
         }
+
+        private void RadioButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/HpWcNngwMg");
+        }
+
+        private void ExitApp_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://gamejolt.com/games/Exotic/401083");
+        }
     }
 }

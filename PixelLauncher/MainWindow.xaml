@@ -47,13 +47,15 @@
                          FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Shop"
                          Foreground="White"
-                         FontSize="18" Grid.Column="3" Margin="90,31,323,572" Grid.Row="1" Grid.RowSpan="2"
+                         FontSize="18" Grid.Column="3" Margin="90,31,321,572" Grid.Row="1" Grid.RowSpan="2"
                          Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" Grid.ColumnSpan="2" 
+                         Click="RadioButton_Click"
                          FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Discord"
+                         Click="RadioButton_Click_1"
                          Foreground="White"
-                         FontSize="18" Grid.Column="4" Margin="0,31,205,572" Grid.Row="1" Grid.RowSpan="2"
-                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" HorizontalAlignment="Right" Width="90"
+                         FontSize="18" Grid.Column="4" Margin="0,31,206,572" Grid.Row="1" Grid.RowSpan="2"
+                         Style="{StaticResource MenuButtonTheme}" RenderTransformOrigin="0.594,0.417" HorizontalAlignment="Right" Width="89"
                          FontFamily="Launcher/Fonts/#Poppins"/>
             <RadioButton Content="  Settings"
                          Foreground="White"
@@ -65,6 +67,7 @@
             <ContentControl Margin="28,0,69,-388" Content="{Binding CurrentView}" Grid.Row="2" Grid.ColumnSpan="5"/>
             <RadioButton x:Name="ExitApp" Content="  x"
                          Foreground="White"
+                         Click="ExitApp_Click"
                          FontSize="23" Grid.Column="4" Margin="313,10,22,28" Grid.Row="1"
                          HorizontalAlignment="Center"
                          FontFamily="Launcher/Fonts/#Poppins"
