@@ -31,7 +31,8 @@
 
                 <StackPanel Background="#423e3e" Height="371" VerticalAlignment="Top" Margin="-2,0,0,-2">
                     <RadioButton Content="      Start Game"
-                         
+                         Click="Play_Click"
+                         Name ="Play"
                          Foreground="White"
                          FontSize="18" 
                          Style="{StaticResource LaunchButtonTheme}" RenderTransformOrigin="0.594,0.417" Height="50" Margin="52,15,41,0">
@@ -131,7 +132,8 @@
                    Margin="47,-424,0,140" Width="485"/>
         </Border>
         <Border Height="33" Margin="0,0,372,0">
-            <TextBlock Text="Beta 2.0.1" 
+            <TextBlock Text="Beta 2.0.1"
+                   Name="VersionText"
                    Foreground="White"
                    FontSize="20"
                    HorizontalAlignment="Left"
